@@ -1,0 +1,617 @@
+:root {
+    --background-color: #0d0d0d;
+    --card-background: #1a1a1a;
+    --text-color: #ffffff;
+    --subtitle-color: #a0a0a0;
+    --highlight-color: #ff4d00;
+    --border-color: #333333;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 180px 0 120px 0; /* Adjusted top padding to move content slightly upwards */
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0));
+    transition: background 0.5s ease;
+    position: relative;
+}
+
+.hero h1,
+.hero p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--subtitle-color);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.cta-button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64400;
+}
+
+/* Hero Section - Content Wrapper for Arches */
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between arches and text */
+    margin-bottom: 40px; /* Space between content and CTA button */
+}
+
+.hero-text-container {
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Hero Arches */
+.hero-arch {
+    width: 50px; /* Width of the arch */
+    height: 200px; /* Height of the arch */
+    border: 3px solid transparent;
+    z-index: 1;
+    position: relative; /* For positioning the gradient */
+}
+
+.hero-arch-left {
+    border-top-left-radius: 1000% 500%;
+    border-bottom-left-radius: 1000% 500%;
+    border-right: none;
+    border-image: linear-gradient(to bottom, transparent, var(--highlight-color) 20%, var(--highlight-color) 80%, transparent) 1;
+}
+
+.hero-arch-right {
+    border-top-right-radius: 1000% 500%;
+    border-bottom-right-radius: 1000% 500%;
+    border-left: none;
+    border-image: linear-gradient(to bottom, transparent, var(--highlight-color) 20%, var(--highlight-color) 80%, transparent) 1;
+}
+
+/* General Section Styling */
+.features-section,
+.testimonials-section,
+.faq-section {
+    padding: 70px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+    margin-bottom: 60px;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+.highlight-italic {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.feature-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(255, 77, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.feature-card .icon-container {
+    background-color: var(--highlight-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-card .icon-container img {
+    width: 28px;
+    height: 28px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--subtitle-color);
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.testimonial-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(255, 77, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.quote {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author h4 {
+    margin: 0 0 5px;
+}
+
+.author p {
+    color: var(--subtitle-color);
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+/* How It Works Section */
+
+/* Why Choose Section */
+.why-choose-section {
+    background-color: var(--background-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.why-choose-section .container {
+    max-width: 1200px;
+}
+
+.why-choose-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.why-choose-subtitle {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
+.why-choose-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+}
+
+.why-choose-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    width: 24%;
+    min-width: 200px;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.why-choose-card .icon-container {
+    background-color: #ff5722;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.why-choose-card .icon-container i {
+    font-size: 24px;
+}
+.why-choose-card .icon-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.why-choose-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.why-choose-card p {
+    color: #e2e8f0;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.how-it-works-section .container {
+    max-width: 1200px;
+}
+
+.how-it-works-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.how-it-works-subtitle {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
+.how-it-works-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-it-works-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    width: 30%; /* Increased width */
+    min-width: 200px;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.how-it-works-card .number-circle {
+    background-color: #ff6b35;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.how-it-works-card .icon-container {
+    background-color: #ff5722;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.how-it-works-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.how-it-works-card .icon-container img {
+    width: 35px;
+    height: 35px;
+    /* filter: invert(1); */
+}
+
+.how-it-works-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-it-works-section .container .how-it-works-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Added gap */
+}
+
+.how-it-works-section .container .how-it-works-cards .how-it-works-card {
+    /* width: 24%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Top Header */
+.top-header {
+    background-color: rgba(13, 13, 13, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.brand-name {
+    margin-left: -10px; /* Adjust spacing between logo and text */
+    white-space: nowrap; /* Prevent line break */
+}
+
+.brand-expn {
+    color: var(--text-color); /* White */
+}
+
+.brand-ai {
+    color: var(--highlight-color); /* Orange */
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff5722;
+}
+
+.top-header .cta-button {
+    background-color: #ff5722;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.top-header .cta-button:hover {
+    background-color: #e53e3e;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    background-color: var(--background-color);
+    padding: 40px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.faq-item {
+    padding: 20px;
+}
+
+.faq-header {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-header:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.faq-header .toggle-icon {
+    font-size: 1.5rem;
+}
+
+.faq-content {
+    color: var(--subtitle-color);
+    line-height: 1.6;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Style for the active state (when the FAQ is open) */
+.faq-card.active .faq-content {
+    display: block;
+}
+
+.faq-card.active .faq-header .toggle-icon {
+    transform: rotate(45deg); /* Rotates the + into an X */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 0 10px;
+    }
+
+    .faq-item {
+        padding: 15px;
+    }
+
+    .faq-header {
+        font-size: 0.9rem;
+    }
+
+    .faq-header .toggle-icon {
+        font-size: 1.2rem;
+    }
+}
+
+.testimonial-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(255, 77, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.why-choose-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(255, 77, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease;
+}
+
+.why-choose-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.how-it-works-card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(255, 77, 0, 0.3); /* Orange glow */
+    transition: transform 0.3s ease;
+}
+
+.how-it-works-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.ai-receptionist-glow {
+    text-shadow: 0 0 10px var(--highlight-color);
+}
+
+.logo img {
+    filter: drop-shadow(0 0 0 #000);
+    height: 50px;
+    width: auto;
+}
+
+
