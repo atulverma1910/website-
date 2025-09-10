@@ -563,6 +563,114 @@ h2 {
     .faq-header .toggle-icon {
         font-size: 1.2rem;
     }
+
+    /* Header adjustments */
+    .top-header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .nav-menu {
+        display: none; /* Hide by default on mobile */
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 65px;
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .top-header .cta-button {
+        display: none; /* Hide CTA button on mobile, can be re-added inside nav-menu if desired */
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        height: 3px;
+        width: 100%;
+        background-color: var(--text-color);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger menu animation */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* General section adjustments */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Grid layouts to stack */
+    .how-it-works-cards,
+    .features-grid,
+    .why-choose-cards,
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .how-it-works-card,
+    .feature-card,
+    .why-choose-card,
+    .testimonial-card {
+        width: auto; /* Allow cards to take full width */
+        min-width: unset;
+    }
+
+    .why-choose-cards {
+        flex-direction: column;
+    }
+
+    .how-it-works-section .container .how-it-works-cards {
+        flex-direction: column;
+    }
 }
 
 .testimonial-card {
