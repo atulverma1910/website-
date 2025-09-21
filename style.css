@@ -556,8 +556,10 @@ body.light-mode .footer {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
+    /* padding-bottom: 56.25%;   -- removed */
+    /* height: 0;                -- removed */
+    width: 100vw;   /* NEW: full browser width */
+    height: 100vh;  /* NEW: full browser height */
     overflow: hidden;
     max-width: 100%;
     background-color: var(--card-background);
@@ -567,6 +569,7 @@ body.light-mode .footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 30px rgba(255, 77, 0, 0.7);
 }
+
 
 .video-wrapper iframe {
     position: absolute;
