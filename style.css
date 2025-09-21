@@ -547,9 +547,33 @@ body.light-mode .footer {
     background: linear-gradient(135deg, rgba(255, 77, 0, 0.7), rgba(255, 77, 0, 0.3)) border-box;
 }
 
-.video-wrapper video {
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     outline: none;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 30px rgba(255, 77, 0, 0.7);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .video-wrapper p {
