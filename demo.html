@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Videos - Voice AI Receptionist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="top-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo for website png.png" alt="Your Logo">
+                <span class="brand-name">
+                    <span class="brand-expn">EXPN</span> <span class="brand-ai">AI</span>
+                </span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#process">Process</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#why-ai">Why Ai</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faqs">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://calendly.com/v-atul1910/30min" class="cta-button">Schedule a call</a>
+                <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle dark and light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="demo-section">
+            <div class="container">
+                <h1>Demo Videos</h1>
+                <p>See our Voice AI Receptionist in action</p>
+                
+                <div class="demo-videos">
+                    <div class="video-container">
+                        <h2>AI Receptionist in Action</h2>
+                        <div class="video-wrapper">
+                            <video width="100%" height="auto" controls>
+                                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Customer interaction with AI Receptionist</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-container">
+                        <h2>Appointment Booking Demo</h2>
+                        <div class="video-wrapper">
+                            <video width="100%" height="auto" controls>
+                                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>AI handling appointment scheduling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-section">
+                        <a href="https://calendly.com/v-atul1910/30min" class="cta-button book-meeting-button">Book a Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EXPN AI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Theme toggle functionality for demo page
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            const themeIcon = themeToggle.querySelector('i');
+
+            const applyTheme = (theme) => {
+                if (theme === 'light') {
+                    body.classList.add('light-mode');
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    body.classList.remove('light-mode');
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                    localStorage.setItem('theme', 'dark');
+                }
+            };
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = localStorage.getItem('theme') || (body.classList.contains('light-mode') ? 'light' : 'dark');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(newTheme);
+            });
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme) {
+                applyTheme(savedTheme);
+            } else if (prefersDark) {
+                applyTheme('dark');
+            } else {
+                applyTheme('light');
+            }
+
+            // Mobile menu toggle
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (mobileMenu && navMenu) {
+                mobileMenu.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
