@@ -1,4 +1,4 @@
-/* EXPN AI / Follow-Up Desk — v3 Premium */
+/* EXPN AI — v3.1 Premium */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
 --bg:#060b18;--bg-alt:#0a1023;--bg-card:#0e1630;
@@ -34,9 +34,7 @@ radial-gradient(ellipse 40% 40% at 75% 75%,rgba(16,185,129,.025),transparent 70%
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;background:rgba(6,11,24,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:all .3s}
 .navbar.scrolled{padding:10px 0;background:rgba(6,11,24,.92);border-bottom-color:var(--border)}
 .nav-inner{max-width:var(--mw);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.nav-brand{display:flex;flex-direction:column;flex-shrink:0}
-.nav-logo{font-weight:800;font-size:18px;letter-spacing:-.02em;line-height:1.1}
-.nav-sub{font-size:10px;font-weight:600;color:var(--t3);letter-spacing:.04em;text-transform:uppercase}
+.nav-logo{font-weight:800;font-size:18px;letter-spacing:-.02em;line-height:1.1;flex-shrink:0}
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links a{font-size:14px;font-weight:500;color:var(--t2);transition:color .2s}
 .nav-links a:hover{color:var(--t)}
@@ -130,9 +128,14 @@ radial-gradient(ellipse 40% 40% at 75% 75%,rgba(16,185,129,.025),transparent 70%
 .bar-3{background:linear-gradient(90deg,var(--orange),var(--red))}
 .bar-4{background:linear-gradient(90deg,var(--red),var(--purple))}
 
+/* === SYSTEM SECTIONS === */
 .sys-num{font-size:12px;font-weight:700;color:var(--accent-b);margin-bottom:10px;display:block}
-.sys-card{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--border)}
-.sys-card:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
+
+/* Each system block is a self-contained unit */
+.system-block{margin-bottom:100px;padding-bottom:100px;border-bottom:1px solid var(--border)}
+.system-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+
+.sys-card{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
 .sys-info h3{font-size:28px;font-weight:800;margin-bottom:14px;letter-spacing:-.02em}
 .sys-info p{font-size:16px;color:var(--t2);line-height:1.75}
 
@@ -158,7 +161,8 @@ radial-gradient(ellipse 40% 40% at 75% 75%,rgba(16,185,129,.025),transparent 70%
 .ql{display:block;font-size:10px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
 .qv{font-size:14px;font-weight:600}
 
-.nurture{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;margin-top:40px}
+/* Nurture sits inside its system-block with proper spacing */
+.nurture{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;margin-top:48px}
 .nurture h3{font-size:22px;font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
 .nurture p{font-size:15px;color:var(--t2);line-height:1.75}
 .nt-tl{display:flex;flex-wrap:wrap;gap:6px}
@@ -229,6 +233,7 @@ radial-gradient(ellipse 40% 40% at 75% 75%,rgba(16,185,129,.025),transparent 70%
 .steps{grid-template-columns:1fr 1fr}
 .crm-block{flex-direction:column;gap:24px}
 .speed-block{flex-direction:column;gap:28px}
+.system-block{margin-bottom:72px;padding-bottom:72px}
 }
 @media(max-width:768px){
 .section{padding:72px 0}
@@ -252,6 +257,7 @@ radial-gradient(ellipse 40% 40% at 75% 75%,rgba(16,185,129,.025),transparent 70%
 .nurture{padding:28px 18px}
 .nt-d{min-width:50px}
 .qual-grid{grid-template-columns:1fr}
+.system-block{margin-bottom:56px;padding-bottom:56px}
 }
 @media(max-width:430px){
 body{font-size:16px}
