@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EXPN AI - AI Follow-Up Systems for Real Estate Agents</title>
-<meta name="description" content="EXPN AI helps real estate agents respond to new leads, surface forgotten follow-ups, and bring old opportunities back to life from their existing CRM.">
-<meta property="og:title" content="EXPN AI - AI Follow-Up Systems for Real Estate Agents">
-<meta property="og:description" content="Your next client may already be in your CRM. EXPN AI finds the conversations worth having.">
+<title>EXPN AI — Turn Real Estate Ad Spend Into Booked Appointments</title>
+<meta name="description" content="EXPN AI runs your Meta Ads, responds to new leads, qualifies them, and follows up until they're ready to talk to you. Built for real estate.">
+<meta property="og:title" content="EXPN AI — Turn Ad Spend Into Booked Appointments">
+<meta property="og:description" content="Lead generation + AI follow-up + appointment setting. One system built for real estate.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://expnai.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,202 +20,153 @@
 <div class="nav-i">
 <span class="n-logo">EXPN AI</span>
 <div class="n-links" id="links">
-<a href="#system">Systems</a>
 <a href="#how">How It Works</a>
-<a href="#why">Why EXPN AI</a>
-<a href="#" class="n-mob btn btn-a" onclick="openBooking();return false;">Book a Call</a>
+<a href="#system">The System</a>
+<a href="#why">Why EXPN</a>
+<a href="#" class="n-mob btn btn-a" onclick="openBooking();return false;">Book a Strategy Call</a>
 </div>
-<a href="#" class="btn btn-a btn n-cta" style="padding:8px 20px;font-size:13px" onclick="openBooking();return false;">Book a Call</a>
+<a href="#" class="btn btn-a n-cta" style="padding:8px 20px;font-size:13px" onclick="openBooking();return false;">Book a Strategy Call</a>
 <button class="n-toggle" id="tog" aria-label="Menu"><span></span><span></span><span></span></button>
 </div>
 </nav>
 
 <main>
 
-<!-- Hero -->
 <section class="hero">
 <div class="hero-glow"></div>
 <div class="c">
-<p class="hero-tag">AI follow-up systems for real estate</p>
-<h1>Your next client may already be in your CRM.</h1>
-<h2>Your job is knowing who needs you next.</h2>
-<p>EXPN AI works alongside your existing CRM to respond to new leads, surface forgotten follow-ups, and bring old opportunities back to life so you can spend more time talking to people who are ready to move.</p>
+<p class="hero-tag">Lead generation + AI follow-up for real estate</p>
+<h1>Turn Real Estate Ad Spend Into Booked Appointments.</h1>
+<p class="hero-sub">EXPN AI runs your Meta Ads, responds to new leads, qualifies them, and follows up until they're ready to talk to you.</p>
+<p class="hero-note">Stop paying for leads and then hoping you have time to chase them. EXPN connects lead generation + AI follow-up + appointment setting into one system built for real estate.</p>
 <div class="hero-btns">
-<a href="#system" class="btn btn-o btn-l">See how it works</a>
-<a href="#" class="btn btn-a btn-l" onclick="openBooking();return false;">Book a Call</a>
+<a href="#how" class="btn btn-o btn-l">See how it works</a>
+<a href="#" class="btn btn-a btn-l" onclick="openBooking();return false;">Book a Strategy Call</a>
 </div>
+<p class="hero-trust">Works alongside your existing CRM.</p>
 <div class="hero-card">
 <div class="wf" id="heroWf">
 <div class="wf-top"><span class="wf-dot"></span><span class="wf-dot"></span><span class="wf-dot"></span><span class="wf-t">EXPN AI</span><span class="wf-live">Live</span></div>
 <div id="wfSt" class="wf-stat"></div>
 <div class="wf-b">
-<div class="wf-s" data-delay="0">
-<div class="wf-ic wf-ic-1"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-<div class="wf-c"><span class="wf-lb">New lead</span><span class="wf-nm">Sarah Johnson</span><span class="wf-dt">"Looking for a 3-bed home in Austin"</span><div class="wf-meta"><span class="wf-badge wf-badge-b">Facebook Ad</span><span class="wf-badge wf-badge-g">just now</span></div></div>
-</div>
+<div class="wf-s"><div class="wf-ic wf-ic-1">🎯</div><div class="wf-c"><span class="wf-lb">Meta Ad</span><span class="wf-nm">Looking for a 3-bed home in Austin?</span></div></div>
 <div class="wf-cn"><div class="wf-ln"></div></div>
-<div class="wf-s" data-delay="1400">
-<div class="wf-ic wf-ic-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-<div class="wf-c"><span class="wf-lb">AI response - 8 seconds</span><span class="wf-mg">"Hey Sarah, thanks for reaching out! Are you looking to buy within the next 30 days?"</span></div>
-</div>
+<div class="wf-s"><div class="wf-ic wf-ic-2">⚡</div><div class="wf-c"><span class="wf-lb">New lead — Sarah Johnson</span><span class="wf-dt">Response in 8 seconds</span></div></div>
 <div class="wf-cn"><div class="wf-ln"></div></div>
-<div class="wf-s" data-delay="2800">
-<div class="wf-ic wf-ic-3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-<div class="wf-c"><span class="wf-lb">Qualified</span>
-<div class="wf-q"><div class="wf-qr"><span>Budget</span><span>$550K</span></div><div class="wf-qr"><span>Timeline</span><span>30-60 days</span></div><div class="wf-qr"><span>Location</span><span>Austin, TX</span></div><div class="wf-qr"><span>Type</span><span>Single family</span></div></div>
-</div>
-</div>
+<div class="wf-s"><div class="wf-ic wf-ic-3">🧠</div><div class="wf-c"><span class="wf-lb">Qualified</span><span class="wf-dt">Budget $550K · 30–60 days · Austin</span></div></div>
 <div class="wf-cn"><div class="wf-ln"></div></div>
-<div class="wf-s" data-delay="4200">
-<div class="wf-ic wf-ic-4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-<div class="wf-c"><span class="wf-lb wf-lb-g">Ready for agent</span><span class="wf-dt">Qualified lead. Ready for your call.</span></div>
-</div>
+<div class="wf-s"><div class="wf-ic wf-ic-4">🔄</div><div class="wf-c"><span class="wf-lb">Follow-up active</span><span class="wf-dt">SMS + Email + Call sequence</span></div></div>
+<div class="wf-cn"><div class="wf-ln"></div></div>
+<div class="wf-s"><div class="wf-ic wf-ic-5">📅</div><div class="wf-c"><span class="wf-lb">Appointment booked</span><span class="wf-dt">Tuesday 2:00 PM</span></div></div>
+<div class="wf-cn"><div class="wf-ln"></div></div>
+<div class="wf-s"><div class="wf-ic wf-ic-6">👤</div><div class="wf-c"><span class="wf-lb wf-lb-g">You take over</span><span class="wf-dt">Qualified opportunity. Ready for your call.</span></div></div>
 </div>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Systems -->
+<section class="s s-alt" id="how">
+<div class="c">
+<div class="sh"><span class="sh-tag">From ad click to appointment</span><h2>One system. Every step between the lead and the agent.</h2></div>
+<div class="pipe">
+<div class="pipe-step"><div class="pipe-rail"><div class="pipe-num">01</div><div class="pipe-line"></div></div><div class="pipe-body"><h3>Attract — Meta Ads</h3><p>EXPN creates and manages your Meta advertising to generate new real estate opportunities.</p></div></div>
+<div class="pipe-step"><div class="pipe-rail"><div class="pipe-num">02</div><div class="pipe-line"></div></div><div class="pipe-body"><h3>Respond — Immediate Lead Response</h3><p>When someone becomes a lead, EXPN starts the conversation quickly instead of letting the lead sit untouched.</p></div></div>
+<div class="pipe-step"><div class="pipe-rail"><div class="pipe-num">03</div><div class="pipe-line"></div></div><div class="pipe-body"><h3>Qualify — Find Out Who's Serious</h3><p>EXPN asks the questions that matter: intent, timeline, budget, location, property type, and financing.</p></div></div>
+<div class="pipe-step"><div class="pipe-rail"><div class="pipe-num">04</div><div class="pipe-line"></div></div><div class="pipe-body"><h3>Nurture — Keep The Conversation Moving</h3><p>Not ready today? EXPN continues structured follow-up through approved channels so potential opportunities don't simply disappear.</p></div></div>
+<div class="pipe-step"><div class="pipe-rail"><div class="pipe-num">05</div><div class="pipe-line"></div></div><div class="pipe-body"><h3>Book — Get Qualified Opportunities Onto Your Calendar</h3><p>When a lead is ready for the next step, EXPN works toward getting the appointment booked.</p></div></div>
+<div class="pipe-step pipe-last"><div class="pipe-rail"><div class="pipe-num">06</div></div><div class="pipe-body"><h3>You Take Over</h3><p>You handle the relationship, showing, negotiation, and closing.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="s">
+<div class="c">
+<div class="sh"><h2>Your lead shouldn't end at "new lead."</h2><p>Most agents already have a process that looks something like this.</p></div>
+<div class="ba">
+<div class="ba-col ba-x"><h4>Today</h4><div class="ba-fl"><div class="ba-s">Meta Ad</div><div class="ba-ar">↓</div><div class="ba-s">Someone submits their info</div><div class="ba-ar">↓</div><div class="ba-s">Lead enters CRM</div><div class="ba-ar">↓</div><div class="ba-s">Agent gets busy</div><div class="ba-ar">↓</div><div class="ba-s">Follow-up gets delayed</div><div class="ba-ar">↓</div><div class="ba-s">Lead goes cold</div><div class="ba-ar">↓</div><div class="ba-s ba-bad">Nobody knows what happened</div></div></div>
+<div class="ba-col ba-v"><h4>With EXPN</h4><div class="ba-fl"><div class="ba-s">Meta Ad</div><div class="ba-ar">↓</div><div class="ba-s">New lead</div><div class="ba-ar">↓</div><div class="ba-s">EXPN responds</div><div class="ba-ar">↓</div><div class="ba-s">Conversation starts</div><div class="ba-ar">↓</div><div class="ba-s">Lead gets qualified</div><div class="ba-ar">↓</div><div class="ba-s">Follow-up continues</div><div class="ba-ar">↓</div><div class="ba-s ba-ok">Appointment gets booked</div></div></div>
+</div>
+</div>
+</section>
+
 <section class="s s-alt" id="system">
 <div class="c">
-<div class="sh"><span class="sh-tag">The system</span><h2>One system. Three jobs.</h2></div>
-
-<div class="sys">
-<div><span class="sys-label">Respond</span><h3 class="sys-h">New leads get attention quickly.</h3><p class="sys-p">When a new lead comes in, EXPN AI can respond, start the conversation, and collect the information your agent needs before the opportunity cools off.</p></div>
-<div class="card"><div class="card-h"><span class="card-dot card-dot-g"></span>Lead response - Active</div>
-<div class="card-b"><div class="qg"><div class="qi"><span class="qi-l">Status</span><span class="qi-v">Responded in 8s</span></div><div class="qi"><span class="qi-l">Channel</span><span class="qi-v">SMS + Email</span></div><div class="qi"><span class="qi-l">Next</span><span class="qi-v">Qualifying</span></div><div class="qi"><span class="qi-l">Outcome</span><span class="qi-v">Conversation active</span></div></div></div>
-</div>
-</div>
-
-<div class="nur">
-<div><h3>Follow-up continues after the first conversation.</h3><p>Not every lead is ready to book immediately. A structured follow-up sequence keeps the conversation moving across multiple touchpoints while giving the agent a clear point to step in.</p></div>
-<div><div class="nt">
-<div class="nd"><span class="nd-n">Day 1</span><span class="nd-ch ch-s">SMS</span><span class="nd-ch ch-c">Call</span></div>
-<div class="nd"><span class="nd-n">Day 2</span><span class="nd-ch ch-e">Email</span></div>
-<div class="nd"><span class="nd-n">Day 3</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd"><span class="nd-n">Day 4</span><span class="nd-ch ch-c">Call</span></div>
-<div class="nd"><span class="nd-n">Day 5</span><span class="nd-ch ch-e">Email</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 6</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 7</span><span class="nd-ch ch-c">Call</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 8</span><span class="nd-ch ch-e">Email</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 9</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 10</span><span class="nd-ch ch-c">Call</span><span class="nd-ch ch-e">Email</span></div>
-</div></div>
-</div>
-
-<div class="sys-sep"></div>
-
-<div class="sys">
-<div><span class="sys-label">Reactivate</span><h3 class="sys-h">Old conversations don't have to stay dead.</h3><p class="sys-p">Your CRM is full of people who never said no. Some weren't ready. Some went quiet. Some changed their timeline. Others simply stopped getting consistent follow-up. EXPN AI helps identify the conversations worth reopening and puts them back into motion.</p></div>
-<div class="card"><div class="card-h"><span class="card-dot card-dot-b"></span>Database reactivation</div>
-<div class="card-b"><div class="fnl-top"><span class="fnl-big" data-target="1247">0</span><span class="fnl-lbl">old contacts</span></div>
-<div class="fnl"><div class="fnl-r" style="--w:100%"><span>Contacted</span><span data-target="1247">0</span></div><div class="fnl-r" style="--w:60%"><span>Responded</span><span data-target="186">0</span></div><div class="fnl-r" style="--w:24%"><span>Interested</span><span data-target="74">0</span></div><div class="fnl-r" style="--w:10%"><span>Appointments</span><span data-target="29">0</span></div></div>
-</div><div class="card-foot">Illustrative campaign example. Results vary by database size and contact quality.</div>
-</div>
-</div>
-
-<div class="nur">
-<div><h3>30-day reactivation sequence</h3><p>Consistent follow-up without manually remembering every touchpoint. EXPN AI runs a 30-day multi-channel sequence with touchpoints every 3 days across SMS, phone, and email to re-engage cold contacts systematically.</p></div>
-<div><div class="nt">
-<div class="nd"><span class="nd-n">Day 1</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd"><span class="nd-n">Day 4</span><span class="nd-ch ch-c">Call</span></div>
-<div class="nd"><span class="nd-n">Day 7</span><span class="nd-ch ch-e">Email</span></div>
-<div class="nd"><span class="nd-n">Day 10</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd"><span class="nd-n">Day 13</span><span class="nd-ch ch-c">Call</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 19</span><span class="nd-ch ch-e">Email</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 25</span><span class="nd-ch ch-s">SMS</span></div>
-<div class="nd nd-dim"><span class="nd-n">Day 30</span><span class="nd-ch ch-c">Call</span><span class="nd-ch ch-e">Email</span></div>
-</div></div>
-</div>
-
-<div class="sys-sep"></div>
-
-<div class="sys">
-<div><span class="sys-label">Qualify</span><h3 class="sys-h">Know who needs your attention next.</h3><p class="sys-p">Instead of manually digging through your CRM, EXPN AI collects the details that help you understand the opportunity: intent, budget, timeline, location, property type, and financing. So you spend more time on the conversations that matter.</p></div>
-<div class="card"><div class="card-h"><span class="card-dot card-dot-g"></span>Lead qualification</div>
-<div class="card-b"><div class="qg"><div class="qi"><span class="qi-l">Intent</span><span class="qi-v">Buying</span></div><div class="qi"><span class="qi-l">Budget</span><span class="qi-v">$450K-$600K</span></div><div class="qi"><span class="qi-l">Timeline</span><span class="qi-v">30-60 days</span></div><div class="qi"><span class="qi-l">Location</span><span class="qi-v">North Austin</span></div><div class="qi"><span class="qi-l">Type</span><span class="qi-v">Single family</span></div><div class="qi"><span class="qi-l">Financing</span><span class="qi-v">Pre-approved</span></div></div></div>
-</div>
+<div class="sh"><span class="sh-tag">Your lead-to-appointment system</span><h2>EXPN combines the pieces that normally live in separate places.</h2></div>
+<div class="feat">
+<div class="feat-card"><span class="feat-em">🎯</span><h4>Lead Generation</h4><p>We create and manage Meta Ad campaigns designed to put your real estate offer in front of potential buyers and sellers.</p></div>
+<div class="feat-card"><span class="feat-em">⚡</span><h4>Lead Response</h4><p>New leads don't have to wait until you're finished with your current client.</p></div>
+<div class="feat-card"><span class="feat-em">🧠</span><h4>Qualification</h4><p>Understand the prospect's intent, timeline, budget, location, property type, and financing situation.</p></div>
+<div class="feat-card"><span class="feat-em">🔄</span><h4>Nurture</h4><p>Leads that aren't ready today can continue through structured follow-up.</p></div>
+<div class="feat-card"><span class="feat-em">📅</span><h4>Appointment Setting</h4><p>When the prospect is ready, EXPN works toward the next step: a booked appointment.</p></div>
+<div class="feat-card"><span class="feat-em">👤</span><h4>Agent Handoff</h4><p>You step in when there's a real opportunity for a human conversation.</p></div>
 </div>
 </div>
 </section>
 
-<!-- CRM -->
 <section class="s">
-<div class="c"><div class="crm"><h3>Keep your CRM. Change what happens after.</h3><p>EXPN AI works from the information already inside your CRM, helping turn contact history, conversations, and follow-up timing into clear next actions. No rip-and-replace migration.</p></div></div>
+<div class="c"><div class="sh"><h2>Not every lead is ready today.</h2><p>And that's okay. Some people are ready to buy now. Some are 30 days away. Some are six months away. Some aren't sure yet. The mistake is treating every lead the same. EXPN keeps the conversation moving.</p></div></div>
 </section>
 
-<!-- Problem -->
 <section class="s s-alt">
 <div class="c">
-<div class="sh"><h2>Every lead has a moment when they need you.</h2><p>The problem isn't always getting another lead. It's knowing which conversation deserves your attention right now and making sure the ones that aren't ready don't disappear into the CRM.</p></div>
-<div class="tl">
-<div class="tl-p tl-1"><span class="tl-tm">0 min</span><span class="tl-dt"></span><span class="tl-lb">Lead is engaged</span></div>
-<div class="tl-p tl-2"><span class="tl-tm">5 min</span><span class="tl-dt"></span><span class="tl-lb">Still interested</span></div>
-<div class="tl-p tl-3"><span class="tl-tm">1 hour</span><span class="tl-dt"></span><span class="tl-lb">Attention fading</span></div>
-<div class="tl-p tl-4"><span class="tl-tm">Next day</span><span class="tl-dt"></span><span class="tl-lb">May be talking to someone else</span></div>
-<div class="tl-p tl-5"><span class="tl-tm">3 days</span><span class="tl-dt"></span><span class="tl-lb">Buried in the CRM</span></div>
+<div class="sh"><h2>What about the leads you already have?</h2><p>Your next opportunity may already be in your CRM. Your database contains people who reached out before, asked about buying or selling, weren't ready at the time, went quiet, or changed their timeline. EXPN can work alongside your existing CRM to identify follow-up opportunities and help bring conversations back into motion.</p></div>
+<div class="tracks">
+<div class="track"><h4>New Leads</h4><div class="track-fl"><div class="track-s">Meta Ads</div><div class="track-ar">↓</div><div class="track-s">Response</div><div class="track-ar">↓</div><div class="track-s">Qualification</div><div class="track-ar">↓</div><div class="track-s">Nurture</div><div class="track-ar">↓</div><div class="track-s" style="color:var(--accent);font-weight:600">Appointment</div></div></div>
+<div class="track"><h4>Existing Database</h4><div class="track-fl"><div class="track-s">CRM</div><div class="track-ar">↓</div><div class="track-s">Identify opportunities</div><div class="track-ar">↓</div><div class="track-s">Re-engage</div><div class="track-ar">↓</div><div class="track-s">Nurture</div><div class="track-ar">↓</div><div class="track-s" style="color:var(--accent);font-weight:600">Appointment</div></div></div>
 </div>
 </div>
 </section>
 
-<!-- How it works -->
-<section class="s" id="how">
+<section class="s">
 <div class="c">
-<div class="sh"><span class="sh-tag">Process</span><h2>How it works</h2></div>
-<div class="steps">
-<div class="step"><h4>Connect</h4><p>We plug into your lead sources, CRM, and existing workflow. No disruption to how you work today.</p></div>
-<div class="step"><h4>Activate</h4><p>EXPN AI starts responding to new leads, qualifying conversations, and working through your existing database.</p></div>
-<div class="step"><h4>Engage</h4><p>Leads receive timely, conversational follow-up across SMS, phone, and email instead of sitting untouched.</p></div>
-<div class="step"><h4>Step in</h4><p>You step in when the conversation is ready for a real human relationship. Your time goes where it matters.</p></div>
+<div class="crm">
+<h3>Keep your CRM. Change what happens after the lead arrives.</h3>
+<p>You don't need to throw away the tools you're already using. EXPN works alongside your existing CRM and workflow. Your CRM stores the information. EXPN helps turn that information into action.</p>
+<p class="crm-list">No unnecessary migration. No rebuilding your entire business around another CRM.</p>
 </div>
 </div>
 </section>
 
-<!-- Before / After -->
-<section class="s s-alt">
+<section class="s s-alt" id="why">
 <div class="c">
-<div class="sh"><h2>Your day before EXPN AI.</h2></div>
-<div class="cmp">
-<div class="cmp-c cmp-x">
-<div class="cmp-hd"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><h4>Without EXPN AI</h4></div>
-<div class="cmp-fl"><div class="cmp-s">New lead comes in</div><div class="cmp-ar">&darr;</div><div class="cmp-s">You're busy with a client</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Follow-up gets pushed</div><div class="cmp-ar">&darr;</div><div class="cmp-s">You remember later</div><div class="cmp-ar">&darr;</div><div class="cmp-s">No answer</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Follow-up gets delayed</div><div class="cmp-ar">&darr;</div><div class="cmp-s cmp-bad">Opportunity disappears into the CRM</div></div>
-</div>
-<div class="cmp-c cmp-v">
-<div class="cmp-hd"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h4>With EXPN AI</h4></div>
-<div class="cmp-fl"><div class="cmp-s">New lead comes in</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Response starts quickly</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Conversation continues</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Follow-up stays organized</div><div class="cmp-ar">&darr;</div><div class="cmp-s">Agent gets involved at the right moment</div><div class="cmp-ar">&darr;</div><div class="cmp-s cmp-ok">You have a conversation worth having</div></div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- AI vs Agent -->
-<section class="s" id="why">
-<div class="c">
-<div class="sh"><h2>AI handles the follow-up.<br>You handle the relationship.</h2><p>EXPN AI is not replacing you. It's removing the repetitive work so you can focus on conversations and transactions that actually close.</p></div>
+<div class="sh"><h2>You handle the relationship. EXPN handles the repetitive work.</h2></div>
 <div class="roles">
-<div class="role role-ai"><div class="role-hd"><div class="role-ic role-ic-a"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>EXPN AI handles</h4></div><ul><li>Quick lead response</li><li>Structured follow-up</li><li>Lead qualification</li><li>Database reactivation</li><li>Multi-channel nurture</li><li>24/7 availability</li></ul></div>
-<div class="role role-ag"><div class="role-hd"><div class="role-ic role-ic-g"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h4>You handle</h4></div><ul><li>Strategy</li><li>Negotiation</li><li>Showings</li><li>Relationship building</li><li>Offers and contracts</li><li>Closing</li></ul></div>
+<div class="role role-ai"><h4>EXPN handles</h4><ul><li>Meta Ads</li><li>Lead response</li><li>Lead qualification</li><li>Structured follow-up</li><li>Database reactivation</li><li>Multi-channel nurture</li><li>Appointment setting</li></ul></div>
+<div class="role role-ag"><h4>You handle</h4><ul><li>Strategy</li><li>Relationships</li><li>Showings</li><li>Negotiation</li><li>Offers</li><li>Contracts</li><li>Closing</li></ul></div>
 </div>
+<p class="role-note">The goal isn't to replace the agent. It's to give the agent more qualified conversations to have.</p>
 </div>
 </section>
 
-<!-- Paid -->
-<section class="s s-alt">
-<div class="c"><div class="cta"><h2>You already paid for the lead.</h2><p>The expensive part isn't getting the lead. It's letting the opportunity disappear afterward. Zillow, Meta, Google, referrals, open houses - you spend money and time creating conversations. Follow-up determines what happens next.</p><a href="#" class="btn btn-a btn-l" onclick="openBooking();return false;">See what's sitting in your CRM</a></div></div>
-</section>
-
-<!-- Final CTA -->
 <section class="s">
-<div class="c"><div class="cta"><p class="trust">Works alongside your existing CRM. No rip-and-replace migration.</p><h2>Your next client may already be sitting in your CRM.</h2><p>Let's find the conversations your CRM isn't reminding you about.</p><div class="cta-btns"><a href="#" class="btn btn-a btn-l" onclick="openBooking();return false;">Book a Call</a><a href="#system" class="btn btn-o btn-l">See how it works</a></div></div></div>
+<div class="c"><div class="cta"><h2>You already paid to get the lead.</h2><p>The ad is only the beginning. You spend money to get someone to raise their hand. What happens next determines whether that opportunity moves forward. EXPN connects both sides: get the lead, and work the lead. One system takes it from click to conversation.</p></div></div>
+</section>
+
+<section class="s s-alt">
+<div class="c">
+<div class="sh"><span class="sh-tag">Why EXPN</span><h2>Because generating a lead and converting a lead are two different problems.</h2><p>You can have great ads and poor follow-up. You can have great follow-up and not enough leads. You can have both and still waste opportunities if nobody knows which prospects deserve attention. EXPN connects the system.</p></div>
+<div class="why-flow"><span>Traffic</span><span class="why-arr">→</span><span>Lead</span><span class="why-arr">→</span><span>Conversation</span><span class="why-arr">→</span><span>Qualification</span><span class="why-arr">→</span><span>Nurture</span><span class="why-arr">→</span><span>Appointment</span><span class="why-arr">→</span><span>Agent</span></div>
+</div>
+</section>
+
+<section class="s">
+<div class="c">
+<div class="cta">
+<h2>Ready to see what this could look like for your business?</h2>
+<p>We'll look at your current lead generation, CRM, and follow-up process and show you where EXPN fits.</p>
+<div class="cta-btns"><a href="#" class="btn btn-a btn-l" onclick="openBooking();return false;">Book a Strategy Call</a></div>
+<p class="cta-notes">No complicated migration. No new CRM required.<br>Just a system built around one objective: more qualified conversations, more opportunities to close.</p>
+</div>
+</div>
 </section>
 
 </main>
 
 <footer>
 <div class="c">
-<div class="ft-i"><div><span class="ft-logo">EXPN AI</span><span class="ft-sub">AI follow-up systems for real estate agents</span></div><div class="ft-links"><a href="#system">Systems</a><a href="#how">How It Works</a><a href="#" onclick="openBooking();return false;">Book a Call</a></div></div>
-<div class="ft-bot"><p>&copy; 2026 EXPN AI. All rights reserved.</p></div>
+<div class="ft-i"><div><span class="ft-logo">EXPN AI</span><span class="ft-sub">Lead generation + AI follow-up for real estate</span></div><div class="ft-links"><a href="#system">The System</a><a href="#how">How It Works</a><a href="#" onclick="openBooking();return false;">Book a Strategy Call</a></div></div>
+<div class="ft-bot"><p>© 2026 EXPN AI. All rights reserved.</p></div>
 </div>
 </footer>
 
